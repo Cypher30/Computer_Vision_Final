@@ -7,6 +7,7 @@ Authors: [Zixuan Chen](https://github.com/403forbiddennn), [Yanjun Shao](https:/
 ## Task1
 
 ## Task2
+The code is the same with the mid-term Faster R-CNN code, and can be found [here](https://github.com/403forbiddennn/DATA130051-Computer-Vision/tree/main/midterm-faster-rcnn).
 
 ## Task3
 
