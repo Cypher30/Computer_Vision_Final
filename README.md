@@ -60,7 +60,13 @@ for frame in tqdm.tqdm(video):
 writer.release() 
 ```
 
+You can find the result video here.
 
+```
+链接：https://pan.baidu.com/s/1_EtihmU6v1Gqqs6pT8GwFg 
+提取码：0216 
+--来自百度网盘超级会员V5的分享
+```
 
 ## Task2
 The code is the same with the mid-term Faster R-CNN code, and can be found [here](https://github.com/403forbiddennn/DATA130051-Computer-Vision/tree/main/midterm-faster-rcnn).
