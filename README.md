@@ -27,7 +27,7 @@ pip install -v -e .
 
 #### Detect Videos
 
-```
+```python
 from mmseg.apis import inference_segmentor, init_segmentor
 import mmcv
 import cv2
@@ -41,28 +41,19 @@ checkpoint_file = 'checkpoints/deeplabv3plus_r101-d8_fp16_512x1024_80k_cityscape
 config_file = 'configs/setr/setr_vit-large_pup_8x1_768x768_80k_cityscapes.py'
 checkpoint_file = 'checkpoints/setr_pup_vit-large_8x1_768x768_80k_cityscapes_20211122_155115-f6f37b8f.pth'
 
-img_file = 'resources/example.png'
+img_file = 'resources/video.mp4'
 out_file = 'resources/output.avi'
-skip = 10
 
 
 # build the model from a config file and a checkpoint file
 model = init_segmentor(config_file, checkpoint_file, device='cuda:0')
 
-# test a single image and show the results
-
-# img = mmcv.imread(img_file)
-
-# result = inference_segmentor(model, img)
-# model.show_result(img, result, out_file=out_file, opacity=0.5)
-
 # test a video and show the results
 video = mmcv.VideoReader('resources/video.mp4')
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 writer = cv2.VideoWriter(out_file, fourcc, video.fps, (video.width, video.height))
-for i, frame in enumerate(tqdm.tqdm(video)):
-    if i > 500:
-        break
+
+for frame in tqdm.tqdm(video):
     result = inference_segmentor(model, frame)
     output = model.show_result(frame, result, opacity=0.5)
     writer.write(output)
