@@ -22,24 +22,24 @@ To train ViT models, use ```python ViT_train.py --help``` to seek help, here is 
 
 ```bash
 python main.py --net_type vit # Net type: ViT or DeiT
-							 --workers 16 # Number of workers to load images
-							 -b 64 # Batchsize
-							 --verbose # Verbose the training process
-							 --lr 0.01 # Learning rate
-							 --epochs 50 # Number of epochs for base phase
-							 --model_save # Save model
-							 --aug_type cutmix # Data augmentation types
-							 --beta 10 # Hyperparameter for data augmentation
-							 --aug_prob 0.5 # Augmentation probability
-							 --save_path ./vit_cutmix.pt # Path to save the model
-							 -tp ./log/vit_cutmix # Tensorboard log path
-							 -tl /vit/ # Tensorboard label
-							 --scheduler # Using Cosine Annealing scheduler
-							 --restart 2 # Number of restart phaeses (N - 1)
-							 --mult 2 # mult factor for number of epochs after each restart
-							 --dim 768 # Dimension after embedding
-							 --depth 16 # Number of transformer blocks
-							 --heads 12 # Number of heads for multi-heads attention
-							 --mlp_dim 1024 # MLP dimension
+			   --workers 16 # Number of workers to load images
+			   -b 64 # Batchsize
+			   --verbose # Verbose the training process
+			   --lr 0.01 # Learning rate
+			   --epochs 50 # Number of epochs for base phase
+			   --model_save # Save model
+			   --aug_type cutmix # Data augmentation types
+			   --beta 10 # Hyperparameter for data augmentation
+			   --aug_prob 0.5 # Augmentation probability
+			   --save_path ./vit_cutmix.pt # Path to save the model
+			   -tp ./log/vit_cutmix # Tensorboard log path
+			   -tl /vit/ # Tensorboard label
+			   --scheduler # Using Cosine Annealing scheduler
+			   --restart 2 # Number of restart phaeses (N - 1)
+			   --mult 2 # mult factor for number of epochs after each restart
+			   --dim 768 # Dimension after embedding
+			   --depth 16 # Number of transformer blocks
+			   --heads 12 # Number of heads for multi-heads attention
+			   --mlp_dim 1024 # MLP dimension
 ```
 
