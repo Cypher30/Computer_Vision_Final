@@ -9,6 +9,8 @@ Authors: [Zixuan Chen](https://github.com/403forbiddennn), [Yanjun Shao](https:/
 ## Task2
 The code is the same with the mid-term Faster R-CNN code, and can be found [here](https://github.com/403forbiddennn/DATA130051-Computer-Vision/tree/main/midterm-faster-rcnn).
 
+All the trained models can be downloaded [here](https://drive.google.com/drive/folders/1_R6Kr9MzCyASmfPM2FoUSkc37CcgpSWG?usp=sharing).
+
 ## Task3
 
 In this task we train transformer-based models on CIFAR-100 from scratch, improving data efficiency by data augmentation, distillation mentioned in DeiT and use specially designed models.
