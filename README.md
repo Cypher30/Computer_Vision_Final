@@ -6,6 +6,8 @@ Authors: [Zixuan Chen](https://github.com/403forbiddennn) [Yanjun Shao](https://
 
 ## Task1
 
+You may also find the steps in the official documents of MMSegmentation
+
 ## Task2
 
 ## Task3
