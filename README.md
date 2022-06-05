@@ -71,7 +71,7 @@ All the trained models can be downloaded [here](https://drive.google.com/drive/f
 
 In this task we train transformer-based models on CIFAR-100 from scratch, improving data efficiency by data augmentation, distillation mentioned in DeiT and use specially designed models.
 
-To use our trained ViT models, you need to first download the models from [here](), and using ViT_test.py to load the models, e.g.
+To use our trained ViT models, you need to first download the models from [here](https://pan.baidu.com/s/1OUfxi0aKknK-VZXkCVdXaA) (password: e6qt), and using ViT_test.py to load the models, e.g.
 
 ```bash
 python ViT_test.py --src vit_baseline.pt # Indicates the source .pt file
@@ -102,3 +102,4 @@ python main.py --net_type vit # Net type: ViT or DeiT
 			   --mlp_dim 1024 # MLP dimension
 ```
 
+We also provide a teacher model ResNet-152 mentioned in our report for you to train your DeiT.
