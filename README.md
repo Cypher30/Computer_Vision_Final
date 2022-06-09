@@ -108,3 +108,5 @@ python main.py --net_type vit # Net type: ViT or DeiT
 The above codes could be found in folder Task3. We also provide a teacher model ResNet-152 mentioned in our report for you to train your DeiT.
 
 The extra work Swin Transformer with localization can be found [here](https://github.com/403forbiddennn/DATA130051-Computer-Vision/tree/master). We get the code from [this repo](https://github.com/yhlleo/VTs-Drloc) and applied some slight changes to it so that it can be adapted to our Pytorch version. The trained model can be found following this [link](https://drive.google.com/drive/folders/1_R6Kr9MzCyASmfPM2FoUSkc37CcgpSWG?usp=sharing).
+
+The Task3/CvT folder contains a reproduced-from-scratch Convolutional Vision Transformer. Unfortunately, we are not able to reproduce the result as expected.
